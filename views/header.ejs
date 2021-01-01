@@ -1,12 +1,71 @@
+<style>
+    header {
+        position: relative; width: 1200; margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .logo img {
+        height: 60px;
+        margin-top: 35px;
+    }
+    .gnb {
+        display: flex;
+        margin: 50px;
+        justify-content: space-between;
+    }
+    .gnb li {
+        display: inline-block;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 45px;
+        font-size: 20px;
+    }
+    .search {
+        height: 45px;
+        margin-top: 40px;
+        justify-content: space-between;
+    }
+    .search s_search {
+        align-items: center;
+    }
+    .search s_search input {
+        display: inline-block;
+        outline: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        font-size: 1.25em;
+        padding-bottom: .25em;
+        flex: 1;
+        transition: all .2s ease-in-out;
+    }
+    .search_link {
+        display: inline-block;
+        background-color: transparent;
+        size: 35px;
+    }
+</style>
 
 <header>
-    <a href="#">
-        <div class="logo">
-            <img src="#" alt="Foodprint_logo"/>
-        </div>
+    <a href="#" class="logo">
+        <img src="./logo.JPG" alt="Foodprint_logo"/>
     </a>
-    <a href="#">소개</a>
-    <a href="#">체크해보세요</a>
-    <a href="#">당신의발걸음</a>
 
+    <ul class="gnb">
+        <li><a href="#">홈</a></li>
+        <li><a href="#">웹디자인</a></li>
+        <li><a href="#">브랜드디자인</a></li>
+        <li><a href="#">그래픽디자인</a></li>
+    </ul>
+
+    <div class="search">
+        <s_search>
+            <input type="text" value="" placeholder="Search Keyword"/>
+            <div class="search_link">
+                <a href="#">
+                    <img src="./search1.png" width="30px"/>
+                </a>
+            </div>
+        </s_search>
+    </div>
 </header>
